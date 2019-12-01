@@ -10,3 +10,4 @@ if [[ "$expected" != "$actual" ]]; then
     exit 1
 fi  
 
+go test -v ./...
