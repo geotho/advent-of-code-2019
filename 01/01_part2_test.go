@@ -1,10 +1,10 @@
 package aoc01
 
 import (
-	"os"
 	"fmt"
-	"testing"
+	"os"
 	"strings"
+	"testing"
 )
 
 func TestTotalFuel(t *testing.T) {
@@ -40,7 +40,7 @@ func TestTotalFuelForFile(t *testing.T) {
 		t.Error(err)
 	}
 
-	if actual != 2 + 966 + 50346 {
+	if actual != 2+966+50346 {
 		t.Fail()
 	}
 }

@@ -2,8 +2,8 @@ package aoc01
 
 import (
 	"bufio"
- "strconv"
- "io"
+	"io"
+	"strconv"
 )
 
 const biggestNumberThatRequiresNoFuel = 2*3 + 2
@@ -32,7 +32,7 @@ func totalFuelForFile(r io.Reader) (int, error) {
 		line := scn.Text()
 		weight, err := strconv.Atoi(line)
 		if err != nil {
-			return 0,err
+			return 0, err
 		}
 		total += totalFuel(weight)
 	}
